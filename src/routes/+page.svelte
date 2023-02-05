@@ -1,3 +1,7 @@
+<script>
+	import Skills from '$lib/Skills.svelte';
+</script>
+
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
 <div class="container h-full mx-auto flex justify-center items-center">
@@ -15,12 +19,12 @@
 		</figure>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
-			<a class="btn btn-filled" href="https://skeleton.dev/" target="_blank" rel="noreferrer">Launch Documentation</a>
+			<a class="btn btn-filled" href="https://skeleton.dev/" target="_blank" rel="noreferrer"
+				>Launch Documentation</a
+			>
 		</div>
 		<div class="space-y-2">
-			<p>Try editing the following:</p>
-			<p><code>/src/routes/+layout.svelte</code></p>
-			<p><code>/src/routes/+page.svelte</code></p>
+			<Skills />
 		</div>
 	</div>
 </div>
