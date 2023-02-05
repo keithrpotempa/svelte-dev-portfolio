@@ -3,11 +3,13 @@
 	const categories = Object.keys(skillList);
 </script>
 
+<h2>Skills</h2>
+
 {#each categories as category}
-	<h2>{category}</h2>
-	<div class="logo-cloud grid-cols-1 lg:grid-cols-4 gap-1">
+	<h3>{category}</h3>
+	<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
 		{#each skillList[category] as skill}
-			<div class="logo-item">{skill.name}</div>
+			<li class="card variant-soft-primary p-2">{skill.name}</li>
 		{/each}
-	</div>
+	</ul>
 {/each}
